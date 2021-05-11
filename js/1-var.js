@@ -14,4 +14,4 @@ const matrix = [
     }
   }
   
-  console.log(total);
+  console.log(total); 
