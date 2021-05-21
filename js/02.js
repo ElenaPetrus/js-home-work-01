@@ -208,17 +208,225 @@
 //     return total;
 //   }
 //   console.log(calculateTotalPrice([12, 85, 37, 4]));
-//   console.log( calculateTotalPrice([412, 371, 94, 63, 176]));
+//   console.log(calculateTotalPrice([412, 371, 94, 63, 176]));
 
-function findLongestWord(string) {
-  let arrString = string.split(' ');
-  let longestWord = arrString[0];
-  for (let i = 0; i < arrString.length; i += 1) {
-    if (arrString[i].length > longestWord.length) {
-      longestWord = arrString[i];      
-    }
-}
-return longestWord;
-}
-
+ /*=====21====*/
+// function findLongestWord(string) {
+//   let arrString = string.split(' ');
+//   let longestWord = arrString[0];
+//   for (let i = 0; i < arrString.length; i += 1) {
+//     if (arrString[i].length > longestWord.length) {
+//       longestWord = arrString[i];      
+//     }
+// }
+// return longestWord;
+// }
+// console.log(findLongestWord('Паразитическая оса Eretmocerus eremicus успешно применяется и демонстрирует высокую эффективность'));
   
+ /*=====22====*/
+// function createArrayOfNumbers(min, max) {
+//   const numbers = [];
+//   for (let i = min; i <= max; i +=1){
+//     numbers.push(i);
+// }
+// return numbers;
+// }
+// console.log(createArrayOfNumbers(1, 3));
+// console.log(createArrayOfNumbers(14, 17));
+// console.log(createArrayOfNumbers(29, 34));
+// console.log(createArrayOfNumbers());
+
+ /*=====23====*/
+// function filterArray(numbers, value) {
+
+//   const newArr = [];
+// for (let i = 0; i < numbers.length; i+=1){
+//  if (numbers[i] > value){
+//   newarr.push(numbers[i]);
+// }
+// }
+// return newArr;
+//  // Change code above this line
+// }
+
+// console.log(filterArray([1, 2, 3, 4, 5], 3));
+// console.log(filterArray([1, 2, 3, 4, 5], 4));
+// console.log(filterArray([1, 2, 3, 4, 5], 5));
+// console.log(filterArray([12, 24, 8, 41, 76], 38));
+
+
+ /*=====24====*/
+//  function checkFruit(fruit) {
+//   const fruits = ["apple", "plum", "pear", "orange"];
+
+//   return fruits.includes(fruit); // Change this line
+// }
+
+// console.log(checkFruit("plum"));
+// console.log(checkFruit("mandarin"));
+// console.log(checkFruit("pear"));
+// console.log(checkFruit("Pear"));
+// console.log(checkFruit("apple"));
+
+ /*=====25====*/
+// function getCommonElements(array1, array2) {
+
+// const commonArr = [];
+  
+//   for (let i = 0; i < array1.length; i+=1){
+//        for (let j = 0; j < array2.length; j+=1){
+//        if (array1[i] === array2[j]){
+//                 commonArr.push(array1[i]);  
+//                }
+//       }
+  
+//   }
+//  return commonArr;
+// }
+// console.log(getCommonElements([1, 2, 3], [2, 4]));
+// console.log(getCommonElements([1, 2, 3], [2, 1, 17, 19]));
+// console.log(getCommonElements([10, 20, 30, 40], [4, 30, 17, 10, 40]));
+// console.log(getCommonElements([1, 2, 3], [10, 20, 30]));
+
+// Вариант 2
+
+// function getCommonElements(array1, array2) {
+
+//   const generalElements = [];
+    
+// for (const element of array1){
+//    if (array2.includes(element)){
+//     generalElements.push(element);  
+//           }
+//   }
+
+// return generalElements;
+// }
+// console.log(getCommonElements([1, 2, 3], [2, 4]));
+// console.log(getCommonElements([1, 2, 3], [2, 1, 17, 19]));
+// console.log(getCommonElements([10, 20, 30, 40], [4, 30, 17, 10, 40]));
+// console.log(getCommonElements([1, 2, 3], [10, 20, 30]));
+
+ /*=====26====*/
+// function calculateTotalPrice(order) {
+//   let total = 0;
+//   // Change code below this line
+
+//   for (const eachPrice of order) {
+//     total += eachPrice;
+//   }
+
+//   // Change code above this line
+//   return total;
+// }
+// console.log(calculateTotalPrice([12, 85, 37, 4]));
+// console.log(calculateTotalPrice([164, 48, 291]));
+// console.log(calculateTotalPrice([412, 371, 94, 63, 176]));
+
+ /*=====27====*/
+// function filterArray(numbers, value) {
+//   const filteredNumbers = [];
+
+//   for (const number of numbers) {
+
+//     if (number > value) {
+//       filteredNumbers.push(number);
+//     }
+//   }
+
+//   return filteredNumbers;
+// }
+// console.log(filterArray([1, 2, 3, 4, 5], 3));
+// console.log(filterArray([1, 2, 3, 4, 5], 4));
+// console.log(filterArray([1, 2, 3, 4, 5], 5));
+// console.log(filterArray([12, 24, 8, 41, 76], 38));
+
+ /*=====28====*/
+
+//  Вместо того, чтобы возвращать результат деления, операция по модулю (%) возвращает целочисленный остаток от деления двух чисел - делимого и делителя.
+
+// 5 % 1 = 0;
+// // 5, разделенное на 1, равно 5, а остаток - 0
+
+// 5 % 2 = 1;
+// //  5, разделенное на 2, равно 2, а остаток - 1
+
+// 5 % 3 = 2;
+// //  5, разделенное на 3, равно 1, а остаток - 2
+
+// 5 % 4 = 1;
+// //  5, разделенное на 4, равно 1, а остаток - 1
+
+// 5 % 5 = 0;
+// //  5, разделенное на 5, равно 1, а остаток - 0
+
+// const a = 3 % 3;
+// const b = 4 % 3;
+// const c = 11 % 4;
+// const d = 12 % 7;
+// const e = 8 % 3;
+
+// console.log(3 % 3);
+
+/*=====29===*/
+// function getEvenNumbers(start, end) {
+   
+//   const numbers = [];
+//     for (let i = start; i <= end; i +=1){
+//          if (i % 2 === 0){
+//         numbers.push(i);
+//          }
+//    }
+//    return numbers;
+//     }
+//     console.log(getEvenNumbers(2, 5));
+//     console.log(getEvenNumbers(3, 11));
+//     console.log(getEvenNumbers(8, 8));
+//     console.log(getEvenNumbers(7, 7));
+
+/*=====30===*/
+// const start = 6;
+// const end = 27;
+// let number;
+
+// for (let i = start; i < end; i += 1) {
+//   if (i % 5 === 0) {
+//     number = i;
+//     break;
+//   }
+// }
+
+/*=====31===*/
+
+// function findNumber(start, end, divisor) {
+//   let number;
+
+//   for (let i = start; i < end; i += 1) {
+//     if (i % divisor === 0) {
+//       number = i;
+//        return number;
+//     }
+//   }
+
+// }
+
+// console.log(findNumber(2, 6, 5));
+// console.log(findNumber(8, 17, 3));
+// console.log(findNumber(6, 9, 4));
+// console.log(findNumber(16, 35, 7));
+
+/*=====32===*/
+
+// function includes(array, value) {
+  
+  
+  // for (let i = 0; i < array.length; i+=1){
+  //          if  (array[i] === value) {
+  //            return true;
+  //          }        
+             
+  //        } 
+  //        return false; 
+  //    }
+  //    console.log(includes([1, 2, 3, 4, 5], 3));
+  //    console.log(includes(["Earth", "Mars", "Venus", "Jupiter", "Saturn"], "Jupiter"));
