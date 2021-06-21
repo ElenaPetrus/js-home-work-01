@@ -447,90 +447,93 @@
 // const booksByAuthor = books.filter(book => book.author === AUTHOR);
 // console.table(booksByAuthor);
 
-/*============================18, 19, 20, 21,22, 23, 25 ====================*/
-// const users= [
-//   {
-//     name: 'Moore Hensley',
-//     email: 'moorehensley@indexia.com',
-//     eyeColor: 'blue',
-//     friends: ['Sharron Pace'],
-//     isActive: false,
-//     balance: 2811,
-//     gender: 'male',
-//     age: 37
-//   },
-//   {
-//     name: 'Sharlene Bush',
-//     email: 'sharlenebush@tubesys.com',
-//     eyeColor: 'blue',
-//     friends: ['Briana Decker', 'Sharron Pace'],
-//     isActive: true,
-//     balance: 3821,
-//     gender: 'female',
-//     age: 34
-//   },
-//   {
-//     name: 'Ross Vazquez',
-//     email: 'rossvazquez@xinware.com',
-//     eyeColor: 'green',
-//     friends: ['Marilyn Mcintosh', 'Padilla Garrison', 'Naomi Buckner'],
-//     isActive: false,
-//     balance: 3793,
-//     gender: 'male',
-//     age: 24
-//   },
-//   {
-//     name: 'Elma Head',
-//     email: 'elmahead@omatom.com',
-//     eyeColor: 'green',
-//     friends: ['Goldie Gentry', 'Aisha Tran'],
-//     isActive: true,
-//     balance: 2278,
-//     gender: 'female',
-//     age: 21
-//   },
-//   {
-//     name: 'Carey Barr',
-//     email: 'careybarr@nurali.com',
-//     eyeColor: 'blue',
-//     friends: ['Jordan Sampson', 'Eddie Strong'],
-//     isActive: true,
-//     balance: 3951,
-//     gender: 'male',
-//     age: 27
-//   },
-//   {
-//     name: 'Blackburn Dotson',
-//     email: 'blackburndotson@furnigeer.com',
-//     eyeColor: 'brown',
-//     friends: ['Jacklyn Lucas', 'Linda Chapman'],
-//     isActive: false,
-//     balance: 1498,
-//     gender: 'male',
-//     age: 38
-//   },
-//   {
-//     name: 'Sheree Anthony',
-//     email: 'shereeanthony@kog.com',
-//     eyeColor: 'brown',
-//     friends: ['Goldie Gentry', 'Briana Decker'],
-//     isActive: true,
-//     balance: 2764,
-//     gender: 'female',
-//     age: 39
-//   }
-// ]
+/*============================18, 19, 20, 21,22, 23, 25, 27, 29, 32, 38, 39, 40 ====================*/
+const users= [
+  {
+    name: 'Moore Hensley',
+    email: 'moorehensley@indexia.com',
+    eyeColor: 'blue',
+    friends: ['Sharron Pace'],
+    isActive: false,
+    balance: 2811,
+    gender: 'male',
+    age: 37
+  },
+  {
+    name: 'Sharlene Bush',
+    email: 'sharlenebush@tubesys.com',
+    eyeColor: 'blue',
+    friends: ['Briana Decker', 'Sharron Pace'],
+    isActive: true,
+    balance: 3821,
+    gender: 'female',
+    age: 34
+  },
+  {
+    name: 'Ross Vazquez',
+    email: 'rossvazquez@xinware.com',
+    eyeColor: 'green',
+    friends: ['Marilyn Mcintosh', 'Padilla Garrison', 'Naomi Buckner'],
+    isActive: false,
+    balance: 3793,
+    gender: 'male',
+    age: 24
+  },
+  {
+    name: 'Elma Head',
+    email: 'elmahead@omatom.com',
+    eyeColor: 'green',
+    friends: ['Goldie Gentry', 'Aisha Tran'],
+    isActive: true,
+    balance: 2278,
+    gender: 'female',
+    age: 21
+  },
+  {
+    name: 'Carey Barr',
+    email: 'careybarr@nurali.com',
+    eyeColor: 'blue',
+    friends: ['Jordan Sampson', 'Eddie Strong'],
+    isActive: true,
+    balance: 3951,
+    gender: 'male',
+    age: 27
+  },
+  {
+    name: 'Blackburn Dotson',
+    email: 'blackburndotson@furnigeer.com',
+    eyeColor: 'brown',
+    friends: ['Jacklyn Lucas', 'Linda Chapman'],
+    isActive: false,
+    balance: 1498,
+    gender: 'male',
+    age: 38
+  },
+  {
+    name: 'Sheree Anthony',
+    email: 'shereeanthony@kog.com',
+    eyeColor: 'brown',
+    friends: ['Goldie Gentry', 'Briana Decker'],
+    isActive: true,
+    balance: 2764,
+    gender: 'female',
+    age: 39
+  }
+]
 // const getUsersWithEyeColor = (users, color) => {
 //  return  users.filter(user => user.eyeColor === color);
 
 // };
 // console.table (getUsersWithEyeColor(users, 'blue'));
 
+
+
 // const getUsersWithAge = (users, minAge, maxAge) => {
  
 //   return  users.filter(user => user.age > minAge && user.age < maxAge);
 // };
 // console.table (getUsersWithAge(users, 30, 40));
+
 
 
 // const getUsersWithFriend = (users, friendName) => {
@@ -540,26 +543,98 @@
 // console.table (getUsersWithFriend (users, 'Briana Decker'));
 
 
+
 // const getFriends = (users) => {
 //   return users.flatMap(user => user.friends).filter((friend,index,array)=> array.indexOf(friend) === index)
  
 // };
 // console.log (getFriends (users));
 
+
 // const getActiveUsers = (users) => {
 //    return users.filter(user => user.isActive === true)
 // };
 // console.table (getActiveUsers (users));
+
 
 // const getInactiveUsers = (users) => {
 //   return users.filter(user => user.isActive !== true)
 // };
 // console.table (getInactiveUsers (users));
 
+
 // const getUserWithEmail = (users, email) => {
 //   return users.find (user => user.email === email)
 // };
 // console.log(getUserWithEmail(users, 'shereeanthony@kog.com'));
+
+
+// const isEveryUserActive = (users) => {
+//    return users.every (user => user.isActive === true)
+// };
+// console.log (isEveryUserActive(users));
+
+
+// const isAnyUserActive = users => {
+//    return users.some (user => user.isActive === true)
+// };
+// console.log (isAnyUserActive(users));
+
+
+// const calculateTotalBalance = users=> {
+//   return users.reduce((totalBalance, user) => {
+//    return totalBalance+user.balance;
+// }, 0);
+// };
+// /*============================var 2 ====================*/
+// // const calculateTotalBalance = users => users.reduce((totalBalance, user) => totalBalance += user.balance, 0);
+// /*============================ end var 2 ===============*/
+// console.log (calculateTotalBalance(users));
+
+// // Дополни функцию getTotalFriendCount(users) так, 
+// // чтобы она считала и возвращала общее количество друзей (свойство friends) всех пользователей из массива users.
+// const getTotalFriendCount = users =>  users.reduce ( (totalFriend, user)=>[...totalFriend, ...user.friends], []).length;
+// console.log(getTotalFriendCount(users));
+
+// const sortByAscendingBalance = users => [...users].sort((a,b)=> a.balance -b.balance);
+// console.table(sortByAscendingBalance(users));
+
+// // Дополни функцию sortByDescendingFriendCount(users) так, 
+// // чтобы она возвращала массив пользователей отсортированный по убыванию количества их друзей (свойство friends).
+// const sortByDescendingFriendCount = users => [...users].sort((a,b)=> b.friends.length - a.friends.length);
+// console.log(sortByDescendingFriendCount(users));
+
+
+// const sortByName = users => [...users].sort((a,b)=> a.name.localeCompare(b.name));
+// console.log(sortByName(users));
+
+
+// // Дополни функцию getNamesSortedByFriendCount(users) так, 
+// // чтобы она возвращала массив имён пользователей отсортированный по возрастанию количества их друзей (свойство friends).
+// const getNamesSortedByFriendCount = users => [...users]
+// .sort((a,b)=> a.friends.length-b.friends.length)
+// .map(user=>user.name)
+// console.log(getNamesSortedByFriendCount(users));
+
+
+// // Дополни функцию getSortedFriends(users) так, 
+// // чтобы она возвращала массив уникальных имён друзей (свойство friends) отсортированный по алфавиту .
+// const getSortedFriends = users => [...users]
+// .flatMap(user => user.friends)
+// .filter((friend,index,array)=> array.indexOf(friend) === index)
+// .sort((a, b)=>a.localeCompare(b));
+
+// console.log(getSortedFriends(users));
+
+
+
+// Дополни функцию getTotalBalanceByGender(users, gender) так, 
+// чтобы она возвращала общий баланс пользователей (свойство balance), 
+// пол которых (свойство gender) совпадает со значением параметра gender.
+const getTotalBalanceByGender = (users, gender) => [...users]
+.filter(user => user.gender === gender)
+.reduce((totalBalance, user) => totalBalance+user.balance, 0)
+console.log(getTotalBalanceByGender(users, 'male'));
 
 /*============================24 ====================*/
 // const books = [
@@ -578,3 +653,198 @@
 // console.log(bookByAuthor);
 
 /*============================26====================*/
+// const firstArray = [26, 94, 36, 18];
+// const secondArray = [17, 61, 23];
+// const thirdArray = [17, 26, 94, 61, 36, 23, 18];
+
+// const eachElementInFirstIsEven = firstArray.every(number=>number%2 === 0);
+// const eachElementInFirstIsOdd = firstArray.every(number=>number%2 !== 0);
+// console.log(eachElementInFirstIsEven);
+// console.log(eachElementInFirstIsOdd);
+// const eachElementInSecondIsEven = secondArray.every(number=>number%2 === 0);
+// const eachElementInSecondIsOdd = secondArray.every(number=>number%2 !== 0);
+// console.log(eachElementInSecondIsEven);
+// console.log(eachElementInSecondIsOdd);
+// const eachElementInThirdIsEven = thirdArray.every(number=>number%2 === 0);
+// const eachElementInThirdIsOdd = thirdArray.every(number=>number%2 !== 0);console.log(eachElementInFirstIsEven);
+// console.log(eachElementInThirdIsEven);
+// console.log(eachElementInThirdIsOdd);
+/*============================28====================*/
+// const firstArray = [26, 94, 36, 18];
+// const secondArray = [17, 61, 23];
+// const thirdArray = [17, 26, 94, 61, 36, 23, 18];
+
+// const anyElementInFirstIsEven = firstArray.some(number=>number%2 === 0);
+// const anyElementInFirstIsOdd = firstArray.some(number=>number%2 !== 0);
+// console.log(anyElementInFirstIsEven);
+// console.log(anyElementInFirstIsOdd);
+// const anyElementInSecondIsEven = secondArray.some(number=>number%2 === 0);
+// const anyElementInSecondIsOdd = secondArray.some(number=>number%2 !== 0);
+// console.log(anyElementInSecondIsEven);
+// console.log(anyElementInSecondIsOdd);
+// const anyElementInThirdIsEven = thirdArray.some(number=>number%2 === 0);
+// const anyElementInThirdIsOdd = thirdArray.some(number=>number%2 !== 0);
+// console.log(anyElementInThirdIsEven);
+// console.log(anyElementInThirdIsOdd);
+
+/*============================30====================*/
+
+// То есть метод reduce() используется когда необходимо взять «много» и привести к «одному». 
+// В повседневных задачах его применение сводится к работе с числами.
+// const players = {
+//   mango: 1270,
+//   poly: 468,
+//   ajax: 710,
+//   kiwi: 244
+// };
+// const playtimes = Object.values(players); // [1270, 468, 710, 244]
+// // Пиши код ниже этой строки
+
+// const totalPlayTime = playtimes.reduce((acc, number)=>{
+//   return acc+number;
+// });
+
+// // Пиши код выше этой строки
+// const averagePlayTime = totalPlayTime / playtimes.length;
+/*============================31====================*/
+
+// const players = [
+//   { name: 'Манго', playtime: 1270, gamesPlayed: 4 },
+//   { name: 'Поли', playtime: 469, gamesPlayed: 2 },
+//   { name: 'Аякс', playtime: 690, gamesPlayed: 3 },
+//   { name: 'Киви', playtime: 241, gamesPlayed: 1 },
+// ];
+// // Пиши код ниже этой строки
+     
+// const totalAveragePlaytimePerGame = players.reduce ((total,player)=>{
+// return total + player.playtime/player.gamesPlayed;
+
+// }, 0);
+
+// console.log(totalAveragePlaytimePerGame);
+
+
+/*============================34====================*/
+
+// // Метод sort() сортирует элементы массива, но в отличии от остальных перебирающих методов, он сортирует исходный массив.
+
+// // Сортирует и изменяет исходный массив.
+// // Возвращает изменённый массив, то есть ссылку на отсортированный исходный.
+// // По умолчанию сортирует по возрастанию.
+// // Сравнение происходит путём приведения значений к строке и сравнения порядковых номеров в таблице Unicode.
+// // Из-за того, что сортируется исходный массив, нарушается принцип чистоты функций и нельзя удобно сделать несколько производных коллекций на базе исходной. 
+// // Например, сделать коллекцию отсортированную по возрастанию, а другую по убыванию.
+// //  Поэтому перед сортировкой делают полную копию исходного массива и сортируют уже её.
+// const releaseDates = [2016, 1967, 2008, 1984, 1973, 2012, 1997];
+// const authors = [
+//   'Ли Танит',
+//   'Бернард Корнуэлл',
+//   'Роберт Шекли',
+//   'Федор Достоевский'
+// ];
+// // Пиши код ниже этой строки
+
+// const ascendingReleaseDates = [...releaseDates].sort();
+// console.log(ascendingReleaseDates);
+// const alphabeticalAuthors = [...authors].sort();
+// console.log(alphabeticalAuthors);
+
+/*============================35====================*/
+
+// const releaseDates = [2016, 1967, 2008, 1984, 1973, 2012, 1997];
+
+// const ascendingReleaseDates = [...releaseDates].sort ((a,b)=>a-b);
+// console.log(ascendingReleaseDates);
+// const descendingReleaseDates = [...releaseDates].sort ((a,b)=>b-a);
+// console.log(descendingReleaseDates);
+
+/*============================36====================*/
+
+// // Для сортировки строк в алфавитном порядке, по возрастанию или убыванию, используется метод строк localeCompare().
+// // firstString.localeCompare(secondString)
+// // Он вызывается на строке которую нужно сравнить (firstString) с той, что передана ему как аргумент (secondString).
+// // Возвращает отрицательное значение если firstString должна быть перед secondString.
+// // Возвращает положительное значение больше нуля если firstString должна быть после secondString.
+// // Если строки одинаковы, возвращается ноль.
+// // Это удобно использовать при сортировке строк, так как метод sort() ожидает такие же значения от коллбек-функции.
+
+// const authors = [
+//   'Ли Танит',
+//   'Бернард Корнуэлл',
+//   'Роберт Шекли',
+//   'Федор Достоевский',
+//   'Говард Лавкрафт'
+// ];
+
+// const authorsInAlphabetOrder = [...authors].sort((a,b)=>a.localeCompare(b));
+// console.table(authorsInAlphabetOrder);
+// const authorsInReversedOrder = [...authors].sort((a,b)=>b.localeCompare(a));
+// console.table(authorsInReversedOrder);
+
+/*============================37====================*/
+// const books = [
+//   { title: 'Последнее королевство', author: 'Бернард Корнуэлл', rating: 8.38 },
+//   { title: 'На берегу спокойных вод', author: 'Роберт Шекли', rating: 8.51 },
+//   { title: 'Сон смешного человека', author: 'Федор Достоевский', rating: 7.75 },
+//   { title: 'Красна как кровь', author: 'Ли Танит', rating: 7.94 },
+//   { title: 'Враг Божий', author: 'Бернард Корнуэлл', rating: 8.67 }
+// ];
+
+// // const sortedByAuthorName = books.sort((firstBook, secondBook) => firstBook.author.localeCompare(secondBook.author));
+// // console.table(sortedByAuthorName);
+
+// // const sortedByReversedAuthorName = books.sort((firstBook, secondBook) => secondBook.author.localeCompare(firstBook.author));
+// // console.table(sortedByReversedAuthorName);
+
+// // const sortedByAscendingRating = books.sort((firstBook, secondBook) => firstBook.rating - secondBook.rating);
+// // console.table(sortedByAscendingRating);
+
+// // const sortedByDescentingRating = books.sort((firstBook, secondBook) => secondBook.rating- firstBook.rating);
+// // console.table(sortedByDescentingRating);
+
+// /*=======вариант 2 ===========*/
+
+// const sortedByAuthorName = [...books].sort ((a,b)=>a.author.localeCompare(b.author));
+// console.log(sortedByAuthorName);
+
+// const sortedByReversedAuthorName = [...books].sort ((a,b)=>b.author.localeCompare(a.author));
+// console.log(sortedByReversedAuthorName);
+
+// const sortedByAscendingRating = [...books].sort ((a,b)=> a.rating -b.rating);
+// console.log(sortedByAscendingRating);
+
+// const sortedByDescentingRating = [...books].sort ((a,b)=> b.rating - a.rating);
+// console.log(sortedByDescentingRating);
+
+
+// /*=======чтобы выводил отсортированных авторов в массив===========*/
+
+// // const sortedByAuthorName = books.flatMap(book => book.author)
+// // .sort((firstBook, secondBook) => firstBook.localeCompare(secondBook));
+// // console.log(sortedByAuthorName);
+
+// // const sortedByReversedAuthorName = books.flatMap(book => book.author)
+// // .sort((firstBook, secondBook) => secondBook.localeCompare(firstBook));
+// // console.log(sortedByReversedAuthorName);
+
+/*============================41====================*/
+
+// Дополни код так, чтобы в переменной names получился массив имён авторов в алфавитном порядке, 
+// рейтинг книг которых больше значения переменной MIN_BOOK_RATING.
+
+// const books = [
+//   { title: 'Последнее королевство', author: 'Бернард Корнуэлл', rating: 8.38 },
+//   { title: 'На берегу спокойных вод', author: 'Роберт Шекли', rating: 8.51 },
+//   { title: 'Сон смешного человека', author: 'Федор Достоевский', rating: 7.75 },
+//   { title: 'Красна как кровь', author: 'Ли Танит', rating: 8.14 },
+//   { title: 'Сны В Ведьмином Доме', author: 'Говард Лавкрафт', rating: 8.67 }
+// ];
+// const MIN_BOOK_RATING = 8;
+
+
+// const names = [...books]
+// .filter (book=>book.rating>MIN_BOOK_RATING)
+// .map(book=>book.author)
+// .sort((a, b)=> a.localeCompare(b));
+
+// console.log(names);
